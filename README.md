@@ -2,12 +2,13 @@
 
 A bash utility for testing programs using sets of inputs and expected outputs.
 
-For a program with respective
+For a program with respective files
 
-`<prefix><program_number><test_number>.in`
-and
-`<prefix><program_number><test_number>.out`
-files, applies `diff` to the output of a compiled program of `<prefix><program_number>` within the directory to the `.out` file.
+
+<prefix><program_number><test_number>.in
+<prefix><program_number><test_number>.out
+
+files, checks if the output of the program <prefix><program_number> produces the same .out file.
 
 This program was designed to make this sort of testing convenient in a university course on C programming.
 
