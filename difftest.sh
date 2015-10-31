@@ -69,4 +69,4 @@ for f in "$dir"/*; do
 done
 
 echo "RESULT:"
-echo "Tests passed: $number_passed/$number_tests (failed: $number_failed, not found: $(($number_tests - $number_passed - $number_failed))"
+echo "Tests passed: $number_passed/$number_tests (failed: $number_failed, not found: $(($number_tests - $number_passed - $number_failed)))"
