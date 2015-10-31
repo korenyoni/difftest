@@ -2,13 +2,12 @@
 
 A bash utility for testing programs using sets of inputs and expected outputs.
 
-For a program with respective files
+For a program with respective files:
 
+`<prefix><program_number><test_number>.in`
+`<prefix><program_number><test_number>.out`
 
-<prefix><program_number><test_number>.in
-<prefix><program_number><test_number>.out
-
-files, checks if the output of the program <prefix><program_number> produces the same .out file.
+Checks if the output of the program `<prefix><program_number>` produces the same output as the given .out file.
 
 This program was designed to make this sort of testing convenient in a university course on C programming.
 
@@ -20,7 +19,7 @@ This program was designed to make this sort of testing convenient in a universit
 
 ##Usage Examples:
 
-* `./difftest.sh` : Tests all the programs in the current directory in respect to the testcases within the testcases directory, their prefix being "q"
+* `./difftest.sh` : Tests all the programs in the current directory in respect to the testcases within the testcases directory, their prefix being "q" by default
 * `./difftest.sh -d tests` : Tests all programs in respect to testcases within a directory named "test"
 * `./difftest.sh -p v` : Same as first, but filename prefix is "v"
 * `./difftest.sh -l 2` : Same as first, but the program number is parsed at two digits
